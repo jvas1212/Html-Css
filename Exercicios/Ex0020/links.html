@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;   /* remove o sublinhado do link */
+        }
+
+        a:visited{  /* aqui utilizamos outra pseudo-classe que utilizamos para estilizar um link quando ele já foi visitado */
+            color: darkred;  /* muda a cor do link para darkred quando ele já foi visitado */
+        }
+
+        a:hover{ /* aqui utilizamos outra pseudo-classe que utilizamos para estilizar um link quando passamos o mouse por cima dele */
+            text-decoration: underline; /* aqui estamos utilizando o text-decoration underline para colocar um sublinhado no link quando passamos o mouse por cima dele */
+            color: black; /* muda a cor do link para black quando passamos o mouse por cima dele */
+        }
+
+        a:active{ /* aqui utilizamos outra pseudo-classe que utilizamos para estilizar um link quando ele está ativo */
+            color: blue; /* muda a cor do link para blue quando ele está ativo (ativo seria no caso quando clicarmos nele)*/
+        }
+
+        a::before{ /* aqui estamos utilizando um pseudo-elemento para adicionar um conteúdo antes do link com o pseudo elemento "before" */
+        content:" (link externo) "; /* aqui estamos utilizando o content para adicionar um conteúdo antes do link */
+        font-size: 0.8em; /* aqui estamos utilizando o font-size para diminuir o tamanho do texto que foi adicionado antes do link */
+        text-decoration: none; /* aqui estamos utilizando o text-decoration none para remover o sublinhado do texto que foi adicionado antes do link */
+        font-weight: normal; /* aqui estamos utilizando o font-weight para deixar o texto que foi adicionado antes do link com a fonte normal */
+        color: darkgray; /* aqui estamos utilizando o color para mudar a cor do texto que foi adicionado antes do link para darkgray */   }
+
+        a::after{ /* aqui estamos utilizando um pseudo-elemento para adicionar um conteúdo após o link com o pseudo elemento "after" */
+        content:" (link externo)"; /* aqui estamos utilizando o content para adicionar um conteúdo após o link */
+        font-size: 0.8em; /* aqui estamos utilizando o font-size para diminuir o tamanho do texto que foi adicionado após o link */
+        text-decoration: none; /* aqui estamos utilizando o text-decoration none para remover o sublinhado do texto que foi adicionado após o link */
+        font-weight: normal; /* aqui estamos utilizando o font-weight para deixar o texto que foi adicionado após o link com a fonte normal */
+        color: darkgray; /* aqui estamos utilizando o color para mudar a cor do texto que foi adicionado após o link para darkgray */   
+                }
+        
+    
+          
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com " target="_blank" rel="external">Site Curso em Vídeo</a></li>
+    </ul>
+    
+
+    <p><a href="pseudoclasses.html" target="_self" rel="prev">Volte para a página inicial</a></p>
+</body>
+</html>

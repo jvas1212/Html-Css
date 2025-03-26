@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px 10px 20px 10px;
+        }
+        h1{
+            text-align: center; /*Utilizei para centralizar o título dentro da caixa*/
+        }
+
+        nav{ 
+            background-color: rgb(123, 118, 118);
+            padding: 3px;
+            box-shadow: 6px 4px 7px 0px rgba(0, 0, 0, 0.407); /*Utilizei para dar uma sombra na caixa, com os valores de deslocamento e desfoque. a utilização do dev tools é muito importante para as sombras.*/
+
+        }   
+
+        nav > a{ /*Aqui o filho da nav é a tag ancora*/
+            text-decoration: none;  /*Utilizei para retirar o sublinhado do link*/
+            color: white;
+            font-weight: bold; /*Utilizei para deixar o texto em negrito*/
+            margin-right: 15px; /*Utilizei para dar um espaçamento entre os links*/
+        }
+
+        a:hover{
+            text-decoration: underline; /*Utilizei para colocar o sublinhado no link quando passar o mouse*/
+        }
+
+        main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px; /*Utilizei para arredondar as bordas da caixa*/
+        box-shadow: 6px 4px 14px 0px rgba(0, 0, 0, 0.301); /*Utilizei para dar uma sombra na caixa, com os valores de deslocamento e desfoque. a utilização do dev tools é muito importante para as sombras.*/
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            width: 260px; /*Utilizei para controlar a largura da caixa*/
+            text-align: center; /*Utilizei para centralizar o texto dentro da caixa*/
+            margin: auto; /*Utilizei para centralizar a caixa no meio da tela*/
+        }
+
+        footer > p{
+            margin: 0px; /*Utilizei para retirar o espaçamento entre o texto e a borda da caixa*/
+
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%; /*Utilizei para arredondar a caixa*/
+            box-shadow: 6px 4px 14px 0px rgba(0, 0, 0, 0.301);; /*Utilizei para dar uma sombra na caixa, com os valores de deslocamento e desfoque. a utilização do dev tools é muito importante para as sombras.*/
+            
+        }
+
+        div#bola > p {
+            text-align: center; /*Utilizei para centralizar o texto dentro da caixa*/
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        div#bola > p > a{
+            text-decoration: none; /*Utilizei para retirar o sublinhado do link*/
+            color: black;
+            font-weight: bold; /*Utilizei para deixar o texto em negrito*/
+        }
+
+        div#bola > p > a:hover{ 
+            text-decoration: underline; /*Utilizei para colocar o sublinhado no link quando passar o mouse*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Menu de navegação-->
+        
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+                <a href="#">link</a>
+            
+        </nav>
+    </header>
+   
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos"></section> <!--Seção de assuntos-->
+
+        <section>
+            <section id="noticias"> <!--Seção de notícias-->
+                <article> <!--Artigo-->
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti rem ipsum ab rerum officiis, veritatis, consequatur, dolore reprehenderit quidem maxime! Sint nesciunt minima harum, adipisci ad totam rerum obcaecati?
+                    Necessitatibus vero, cum a esse corporis eius repellendus aliquid rem vel qui maiores hic molestiae nemo quos illum harum itaque repellat molestias expedita, inventore blanditiis. Consequatur aspernatur enim perferendis quibusdam.
+                    Saepe quaerat, quasi libero culpa recusandae deleniti dolore similique cumque magnam nostrum sunt quae earum accusantium id eius at obcaecati aliquam sit iste? Omnis minima aspernatur dicta doloribus, voluptatem vitae!</p>
+                    <aside> <!--Barra lateral-->
+                        <p>Artigo escrito por João Souza</p>
+                    </aside>
+                </article>
+            </section>
+
+        </section>
+ 
+    </main>
+
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido por João Souza</p>
+        
+    </footer>
+
+    <div id="bola">   
+        <p><a href="caixa01.html">Voltar &#8592;</a></p>
+
+    </div>
+    
+</body>
+</html>

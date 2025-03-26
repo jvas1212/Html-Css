@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video width="560" height="315" poster="thumbnail.png" controls> <!--Aqui eu coloquei os atríbutos: width(largura) e height(altura) para definir o tamanho do vídeo; controls para que o vídeo tenha os controles de play, pause, volume; e o poster para colocar uma capa no nosso vídeo. -->
+        <source src="midia/Meu-Video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm"> <!--Aqui no caso eu não testei com todas os formados de midia como ogg e mv4, mas o correto nessa forma de hospedagem de vídeo é colocar com todos os formados para o teste. ATENÇÃO:Lembrando que a ordem de formados importa, o teste começa de cima para baixo no <source>-->
+        <p>Não foi possívesl reproduzir o vídeo o vídeo</p>
+
+    </video>
+
+    <h1>Inserindo videos do YouTube -_-</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6ErEMwnO6eQ?si=BjrmGdtIE1fpjGf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

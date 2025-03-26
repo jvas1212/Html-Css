@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face{       /*Aqui estamos importando uma fonte externa a qual foi baixada.*/
+            font-family: 'love'; /*Aqui estamos definindo o nome da fonte que será utilizada no documento.*/
+            src: url(Fontes/love\ story\ ttf.ttf) format('truetype'); 
+            font-weight: normal;
+            font-style: normal;
+
+            /*Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                -embedded opentype (eot)
+                -scalable vector graphics (svg)
+                -truetype-aat (Apple Advanced Typography)
+            */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a voluptatibus similique nihil, labore dolore ut harum nesciunt perferendis totam, provident, officiis odit quia minima deleniti praesentium. Hic, ut qui.</p>
+
+
+
+
+
+
+
+    <p><a href="fonte01.html" target="_self" rel="prev">Voltar para página inicial</a></p>
+    <p><a href="fonte03.html" target="_self" rel="next">Próxima página do exercício</a></p>
+    
+</body>
+</html>

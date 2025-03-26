@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+    div > p{  /* Aqui estamos utilizando o sinal de maior > para indicar que o elemento p está dentro do elemento div */
+        display: none; /* Aqui estamos utilizando o display none para esconder o conteudo do elemento p */
+
+    }
+                                                    /*ATENÇÃO ABAIXO*/
+    /*Para utilizarmos o conceito de filho de uma div utilizamos o sinal > representado abaixo. Que no caso seria o seguinte: Os parágrafos (p) que estão dentro da div receberá as configurações relatadas abaixo!*/
+
+    div:hover > p{ /* Aqui estamos utilizando uma pseud-classe com o : e o elemento "hover" para quando passarmos o mouse por cima do conteudo da div ele vai aparecer o conteudo do elemento p*/
+        display: block; /* Aqui estamos utilizando o display block para mostrar o conteudo do elemento p */
+        color: white;
+        background-color: black;
+        width: 300px;
+    } /*Este conceito de esconder um texto e quando passamos o mouse aparece o texto escondido é muito utilizado para criação de menus em sites... Quando passamos o mouse sobre algum tópico em um menu de um site e aparece varias opções sobre aquele determinado tópico.*/
+
+div:hover{ /* Aqui estamos utilizando uma pseud-classe com o : e o elemento "hover" para quando passarmos o mouse por cima do conteudo da div ele vai ficar vermelho*/
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui 
+        <p>Texto escondido...</p>
+    </div>
+
+    <p>Fim do exemplo</p>
+
+    <p><a href="pseudoclasses.html" target="_self" rel="prev">Volte para página inicial</a></p>
+    <p><a href="links.html" target="_self" rel="next">Próxima página</a></p>
+    
+</body>
+</html>

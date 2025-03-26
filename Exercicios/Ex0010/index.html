@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Usando Links e Âncoras</h1>
+
+    <h2>Usando links externos</h2>
+    <p>O link externo é um link que vai apontar para outro site, ou seja que não é nosso.</p>
+    <br>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a> </p> <!--Aqui coloquei o do Guanabara mesmo-->
+    <p> Você também pode acessar o meu <a href="https:/youtube.com/cursoemvideo">canal no Youtube</a></p>
+    <p>Atenção: <strong>Sempre que estiver utilizando um link externo o recomentado é utilizar o target, como esta sendo utilizado acima!</strong> <br> Estes parametros relatadados acima faz com que ao clicar no link, o site externo será aberto em outra janela do navegador. Assim não estará se sobrepondo ao seu site. <br> Olhe a diferença do primeiro link, para o segundo link.</p>
+
+    <h3>Vamos criar um link</h3>
+    <p><a href="https://chatgpt.com/" target="_blank"> aqui nós criamos um link externo para o chatgpt. </a></p>
+
+    <h3>Aqui iremos utilizar o hreflang</h3>
+    <p>Aqui utilizaremos um atributo "hreflang", que permite indicar qual é o idioma principal do site para onde o link está direcionado o usuário. <a href="https://www.w3schools.com/html/" target="_blank" hreflang="en">Como por exemplo!</a> <br> Site da W3schools (que no caso é um site com o idioma original em inglês), isso ajuda os navegadores para quando o usuário estiver com a tradução automática ativada. </p>
+
+    <h2>Usando links internos</h2> 
+    <p>O link interno vai realizar a ligação de com outra pagina que está dentro do nosso servidor, que condiz com a nossa própria página.</p>
+    <p>Esta é a primeira página do site. Se você quiser pode acessar também a minha <a href="pag002.html" target="_self" rel="Next">segunda página</a>. </p> <!--Neste caso o rel foi utilizado o next, pois vai avançar uma página-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p> <!--Sempre tomar atenção no href para informarmos o caminho correto. Repare que a pag003 está dentro da pasta noticia.-->
+
+    <h2>Usando links de downloads</h2>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank" > Baixar livro em PDF</a></li> <!--Quando for pdf nem sempre ele vai baixar automaticamente dependendo do navegador.-->
+        <li><a href="Livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP</a></li> <!--Porém se for pasta provavelmente qualquer navegador ja baixa automatico ao clicar no link.-->
+    </ul>
+
+    
+
+
+
+    
+</body>
+</html>

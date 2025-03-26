@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon-hmtl5.ico" type="image/x-icon">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o zoom do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!--Se o tamanho máximo do meu navegador for 750px, irá carregar a imagem P.--> <!--ATENÇÃO O SOURCE DEVE ESTAR NESTA ORDEM!-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Se o tamanho máximo do meu navegador for 1050px, irá carregar a imagem M.-->
+        <img src="imagens/foto-g.png" alt="Imagem G (Grande)">
+    </picture>
+
+    <h1> Reproduzindo aúdios</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+    <audio src="midia/Radio Flyer - Nathan Moore.mp3" controls autoplay>  </audio> <!--Note que nessa primeira forma de colocarmos audio no site, temos 2 parametros que devem sempre estar presentes nesta tag "controls" "autoplay"-->
+    
+   
+    <audio preload="auto" controls> <!--O atributo preload="auto" faz com que o navegador carregue o audio automaticamente, o atributo controls faz com que apareça os controles de reprodução do audio-->
+            <source src="midia/Radio Flyer - Nathan Moore.mp3" type="audio/mpeg">
+            <source src="midia/Radio Flyer - Nathan Moore.ogg" type="audio/ogg">
+            <source src="midia/Radio Flyer - Nathan Moore.wav" type="audio/wav"> <!--O arquivo em wav eu não baixei pq ele é muito mais pesado doque .ogg e .mp3-->
+             <!--Neste caso, o navegador irá escolher o melhor formato para reproduzir o audio, se o navegador não aceitar o mp3 ele tenta o ogg, senão ele tenta o wave. Caso ele não aceite nenhum dos 3 então ele vai ler a mensagem abaixo. IMPORTANTE: o source estar sempre em ordem, primeiro mp3, depois ogg e depois o wave!-->
+            <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Radio Flyer - Nathan Moore.mp3">Clique aqui para baixar o arquivo mp3.</a></p>
+    </audio>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-hmtl5.ico" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+
+        h1{ /*Box-Level*/
+           background-color: lightgrey; /* cor de fundo da box*/
+
+           /*Box-Size*/
+            height: 300px; /* altura da box*/
+            width: 300px; /* largura da box*/
+
+            /*Shothand da borda(border: 10px solid black)*/
+            border-width: 6px; /* largura da borda*/ 
+            border-style: solid; /* estilo da borda*/
+            border-color: black; /* cor da borda*/
+
+            border-radius: 10px;
+            
+            /*Shorthand do padding(padding: 10px(top) 10px(right) 10px(bottom) 10px(left)*/
+            padding-top: 10px; /* espaço entre o conteúdo e a borda superior*/
+            padding-left: 10px; /* espaço entre o conteúdo e a borda esquerda*/
+            padding-right: 10px; /* espaço entre o conteúdo e a borda direita*/
+            padding-bottom: 10px; /* espaço entre o conteúdo e a borda inferior*/
+
+            /*Shorthand do margin(margin: 20px(top) 20px(right) 40px(bottom) 20px(left)*/
+            margin-top: 20px; /* espaço entre a borda superior e a próxima caixa*/
+            margin-right: 20px; /* espaço entre a borda direita e a próxima caixa*/
+            margin-bottom: 40px; /* espaço entre a borda inferior e a próxima caixa*/
+            margin-left: 20px; /* espaço entre a borda esquerda e a próxima caixa*/
+
+            
+        }
+
+        a{ /*Inline-Level*/
+           border-radius: 10px 0px; /*Utilizei para arredondar as bordas da caixa*/
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            text-decoration: none; 
+            color: black;
+            font-weight: bold;
+
+
+        }
+
+        a:hover{ /*PSEUDO-CLASSE. Quando eu passar o mouse por cima do link o sublinhado vai aparecer.*/
+            text-decoration: underline;
+        }
+
+        p#next{ /*ID*/
+            text-align: center;
+            margin-top: 60px;
+        }
+            
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas o <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+
+    <p id="next"><a href="caixa02.html" target="_self" rel="next">Próxima página</a></p>
+    
+</body>
+</html>
