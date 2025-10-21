@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        /* Aqui estamos definindo a imagem de fundo para o corpo da página */
+        body{
+            background-image: url(imagens/wallpaper004.jpg);
+        }
+        
+        div.quadrado{
+        display: inline-block;  
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+            
+        }
+
+        /* Aqui estamos definindo a imagem de fundo para o primeiro quadrado */
+        div#qd1{ 
+            background-color: rgb(175, 174, 174);
+
+        }
+
+        /* Aqui criamos um gradiente de cor para o fundo do segundo quadrado*/
+        div#qd2{ 
+            background-image: linear-gradient(to bottom, orange, red);
+        }
+
+        /* Aqui estamos definindo a imagem de fundo para o terceiro quadrado, sempre colocar o caminho dentro da URL */
+        div#qd3{
+            background-image: url(imagens/pattern004.png);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quadrado" id="qd1">
+
+    </div>
+
+    <div class="quadrado" id="qd2">
+
+    </div>
+
+    <div class="quadrado" id="qd3">
+
+    </div>
+
+
+    
+</body>
+</html>
